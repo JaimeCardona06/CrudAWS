@@ -1,0 +1,12 @@
+# .gitignore dentro de Terraform/
+
+# Ignorar archivos de estado de Terraform
+*.tfstate
+*.tfstate.backup
+
+# Ignorar los archivos de configuración de Terraform
+*.tfvars
+*.tfvars.json
+
+# Directorios de Terraform
+.terraform/

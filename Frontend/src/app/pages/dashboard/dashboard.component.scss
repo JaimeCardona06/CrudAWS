@@ -1,0 +1,41 @@
+.dashboard-container {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .info-card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+  }
+  
+  .info-card i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+  }
+  
+  button.go-to-movies {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button.go-to-movies:hover {
+    background-color: #0056b3;
+  }
+  
