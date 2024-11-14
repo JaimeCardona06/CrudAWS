@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "7f8114e3-3253-4285-aa76-8dceefd1cf0e",
+		"name": "Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33373764"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Nueva pelicula desde postman\",\r\n    \"duration\": 152,\r\n    \"revenue\": 1222,\r\n    \"release_date\": \"2015-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://yq707y44of.execute-api.us-east-1.amazonaws.com/prod/movies",
+					"protocol": "https",
+					"host": [
+						"yq707y44of",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"24dfe277-1d5e-4231-8273-1ed3267c7dc0\",\r\n    \"name\": \"Nueva pelicula desde postman edit\",\r\n    \"duration\": 152,\r\n    \"revenue\": 1222,\r\n    \"release_date\": \"2015-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://yq707y44of.execute-api.us-east-1.amazonaws.com/prod/movies/24dfe277-1d5e-4231-8273-1ed3267c7dc0",
+					"protocol": "https",
+					"host": [
+						"yq707y44of",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"movies",
+						"24dfe277-1d5e-4231-8273-1ed3267c7dc0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://yq707y44of.execute-api.us-east-1.amazonaws.com/prod/movies/24dfe277-1d5e-4231-8273-1ed3267c7dc0",
+					"protocol": "https",
+					"host": [
+						"yq707y44of",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"movies",
+						"24dfe277-1d5e-4231-8273-1ed3267c7dc0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://yq707y44of.execute-api.us-east-1.amazonaws.com/prod/movies/24dfe277-1d5e-4231-8273-1ed3267c7dc0",
+					"protocol": "https",
+					"host": [
+						"yq707y44of",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"movies",
+						"24dfe277-1d5e-4231-8273-1ed3267c7dc0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
